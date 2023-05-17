@@ -1,0 +1,41 @@
+:root{
+    --fondo-light: #FAFAFA;
+    --color-primario:#8F3AFE;
+    --color-primario-design: #CE41FF;
+    --color-secundario:#E243FF;
+    --color-boxmessage: #EDE5F2;
+    --color-light:#FFFFFF;
+    --color-dark:#3B274B;
+    --color-silver:#A7A5A9;
+    --color-design:#F9F4FA;
+}
+
+body{
+    max-width: 100%;
+    height: 100vh;
+    background-color: var(--fondo-light);
+}
+
+.main-purpledesign{
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate(-20%,0);
+    width: 30%;
+    height: 85%;
+    background: linear-gradient(to top, var(--color-primario), var(--color-primario-design));
+    z-index: -1;
+    border-radius: 0 0 20rem 20rem;
+}
+
+.main-pinkdesign{
+    position: fixed;
+    left: 100%;
+    top: 100%;
+    transform: translate(-70%,-100%);
+    width: 30%;
+    height: 85%;
+    background-color: var(--color-design);
+    z-index: -1;
+    border-radius: 20rem 13rem 0 0;
+}
