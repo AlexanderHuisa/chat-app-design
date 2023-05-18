@@ -1,0 +1,84 @@
+.main-content_mobile-message{
+    background-color: var(--color-design);
+    height: calc(50rem - 6.5rem - 4%);
+    border-radius: 0 0 30px 30px;
+    width: 91%;
+    padding: 4% 4%;
+}
+.message-left{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-left li{
+    background-color: var(--color-boxmessage);
+    border-radius: 20px 20px 20px 5px;
+    padding: .7rem;
+    color: var(--color-primario-design);
+    max-width: 55%;
+    margin: 0.5rem 0;
+    font-size: .9rem;
+
+}
+.message-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: .8rem 0;
+}
+#message-right-img{
+    background-color: transparent;
+    padding: 0;
+    max-width: 70%;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 9px;
+}
+
+#message-right-img img{
+    border: none;
+    border-radius: 10px;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.message-right li{
+    background-color: var(--color-light);
+    padding: .7rem;
+    color: var(--color-dark);
+    max-width: 55%;
+    margin: 0.5rem 0;
+    border-radius: 20px 20px 5px 20px;
+    font-size: .9rem;
+
+}
+.message-options li{
+    background: linear-gradient(to left, var(--color-primario), var(--color-secundario));
+    padding: 1rem .7rem;
+
+}
+.message-options li{
+    max-width: 70%;
+}
+.message-options li{
+    display: flex;
+    align-items: center;
+    color: var(--color-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.message-options li svg{
+    width: 10%;
+    fill: rgba(255, 255, 255, 0.456);
+}
+
+.message-options li span{
+    margin-left: .7rem;
+    width: 65%;
+    font-size: .9rem;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.593);
+
+}

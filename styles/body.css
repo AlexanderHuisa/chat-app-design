@@ -6,8 +6,9 @@
     --color-primario-design: #CE41FF;
     --color-secundario:#E243FF;
     --color-boxmessage: #EDE5F2;
-    --color-light:#FFFFFF;
-    --color-dark:#3B274B;
+    --color-light:#ffffff;
+    --color-light-opacity:#ffffff8d;
+    --color-dark:#3b274b;
     --color-silver:#A7A5A9;
     --color-design:#F9F4FA;
     --font: 'Rubik', sans-serif;
@@ -20,11 +21,7 @@ body{
     overflow-x: hidden;
     font-family: var(--font);
 }
-svg{
-    width: 1.5rem;
-    fill: var(--color-light);
-    color: var(--color-light);
-}
+
 
 .main-purpledesign{
     position: fixed;
@@ -57,7 +54,7 @@ svg{
     max-width: 1440px;
     height: 100vh;
     margin: 0 auto;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     align-items: center;
 }
@@ -68,50 +65,22 @@ svg{
     background-color: var(--color-light);
     border-radius: 30px;
     padding: 1rem;
-}
-.main-content_mobile-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 30px 30px 5px 5px;
-    width: 91%;
-    background: linear-gradient(to right, var(--color-primario), var(--color-secundario));
-    padding: 0 4%;
-}
-
-.mobile-header_info{
-    display: flex;
-    align-items: center;
-    align-self: flex-start;
-    height: 4.5rem;
-    width: 100%;
-}
-.mobile-header_white-box{
-    width: 13rem;
-    height: 2rem;
-    border-radius: 0 0 25px 25px;
-    background-color: var(--color-light);
-}
-.main-content_mobile img{
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    border: solid 0.2em var(--color-light);
-}
-
-.mobile-header_info-name{
-    margin: 0 32.5% 0 1rem;
-    color: var(--color-light);
-    line-height: 1.1em;
-    letter-spacing: 1px;
-    font-size: 19px;
-
-}
-.mobile-header_info-name p{
-    font-size: .6em;
-    letter-spacing: normal;
+    box-shadow: 5px 5px 20px 5px #00000012;
 }
 
 .main-content_info{
     width: 50%;
+}
+
+/* ================================== */
+
+.main-content_info h1{
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+.main-content_info p{
+    font-size: 1.5rem;
+    color: var(--color-silver);
+    line-height: 1.5em;
 }
