@@ -1,9 +1,10 @@
 .main-content_mobile-message{
-    background-color: var(--color-design);
+    background-color: var(--color-background-mobile);
     height: calc(50rem - 6.5rem - 4%);
     border-radius: 0 0 30px 30px;
-    width: 91%;
+    width: 92%;
     padding: 4% 4%;
+    margin: 0;
 }
 .message-left{
     max-width: 100%;
@@ -19,7 +20,6 @@
     max-width: 55%;
     margin: 0.5rem 0;
     font-size: .9rem;
-
 }
 .message-right{
     width: 100%;
@@ -52,17 +52,11 @@
     margin: 0.5rem 0;
     border-radius: 20px 20px 5px 20px;
     font-size: .9rem;
-
 }
 .message-options li{
     background: linear-gradient(to left, var(--color-primario), var(--color-secundario));
     padding: 1rem .7rem;
-
-}
-.message-options li{
     max-width: 70%;
-}
-.message-options li{
     display: flex;
     align-items: center;
     color: var(--color-light);
@@ -80,5 +74,45 @@
     font-size: .9rem;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.593);
+}
 
+@media screen and (max-width: 529px){
+    .main-content_mobile-message{
+        height: calc(39rem - 4.5rem - 4%);
+    }
+    .message-right{
+        margin: .4rem 0;
+    }
+    .message-right li{
+        padding: .6rem;
+        color: var(--color-dark);
+        max-width: 55%;
+        margin: 0.3rem 0;
+        border-radius: 20px 20px 5px 20px;
+        font-size: .8rem;
+    }
+
+    .message-left li{
+        background-color: var(--color-boxmessage);
+        border-radius: 20px 20px 20px 5px;
+        padding: .6rem;
+        color: var(--color-primario-design);
+        max-width: 55%;
+        margin: 0.3rem 0;
+        font-size: .8rem;
+    }
+    #message-right-img{
+        gap: 8px;
+    }
+    
+    #message-right-img img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .message-options li{
+        color: var(--color-light);
+        font-size: 1rem;
+        max-width: 70%;
+    }
 }

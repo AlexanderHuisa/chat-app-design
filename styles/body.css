@@ -11,7 +11,9 @@
     --color-dark:#3b274b;
     --color-silver:#A7A5A9;
     --color-design:#F9F4FA;
+    --color-background-mobile: #F5F3F8;
     --font: 'Rubik', sans-serif;
+    --color-h1:#3F2950;
 }
 
 body{
@@ -63,7 +65,7 @@ body{
     width: 25rem;
     height: 50rem;
     background-color: var(--color-light);
-    border-radius: 30px;
+    border-radius: 40px;
     padding: 1rem;
     box-shadow: 5px 5px 20px 5px #00000012;
 }
@@ -75,12 +77,86 @@ body{
 /* ================================== */
 
 .main-content_info h1{
-    font-size: 5rem;
-    font-weight: 500;
+    font-size: 4rem;
+    font-weight: bold;
     margin-bottom: .5em;
+    color: var(--color-h1);
 }
 .main-content_info p{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--color-silver);
     line-height: 1.5em;
+}
+
+
+@media screen and (max-width: 950px){
+    .main-content{
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        height: 90rem;
+        padding: 5rem 3rem 0 3rem;
+    }
+    .part-one{
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+    .main-content_mobile{
+        margin: 0 auto;
+    }
+
+    .main-content_info{
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 529px){
+    .main-content{
+        height: 90rem;
+        display: flex;
+        flex-direction: column;
+        height: 70rem;
+        padding: 5rem 1rem 0 1rem;
+    }
+    .part-one{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .main-content_mobile{
+        margin: 0 auto;
+        width: 20rem;
+        height: 39rem;
+        border-radius: 40px;
+    }
+
+    .main-content_info{
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-content_info h1{
+        font-size: 2.7rem;
+        font-weight: bold;
+        margin-bottom: .5em;
+        color: var(--color-h1);
+    }
+    .main-content_info p{
+        font-size: 1.45rem;
+        color: var(--color-silver);
+        line-height: 1.5em;
+    }
+   
+}
+
+@media screen and (max-width: 409px){
+    .main-content{
+        height: 70rem;
+        padding: 5rem .5rem 0 .1rem;
+    }
+    .main-content_info p{
+        font-size: 1.35rem;
+        padding: 0 1em;
+    }
+
 }
